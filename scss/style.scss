@@ -10,18 +10,33 @@
  * project-specific components afterwards.
  */
 
-
 /**
  * Setup
  */
 @import "vars";
 @import "inuit.css/inuit";
-
-
-
-
+@import "inuit.css/objects/_nav.scss";
 
 /**
  * She’s all yours, cap’n... Begin importing your stuff here.
  */
 //@import "ui/example";
+
+nav {
+    img {
+        display: inline-block;
+    }
+
+    .nav {
+        display: inline-block;
+    }
+}
+
+.top {
+    img {
+        display: inline-block;
+    }
+    h1 {
+        display: inline-block;
+    }
+}

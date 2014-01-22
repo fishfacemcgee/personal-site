@@ -14,6 +14,7 @@ module.exports = (grunt) ->
                 options:
                     sassDir: 'scss'
                     cssDir: 'css'
+                    outputStyle: 'expanded'
         watch:
             sass:
                 files: ['scss/*.scss']
@@ -36,4 +37,4 @@ module.exports = (grunt) ->
     grunt.loadNpmTasks 'grunt-contrib-uglify'
     grunt.loadNpmTasks 'grunt-contrib-imagemin'
 
-    grunt.registerTask('default', ['jshint', 'compass', 'imagemin', 'watch'])
+    grunt.registerTask('default', ['jshint', 'compass', 'imagemin'])
